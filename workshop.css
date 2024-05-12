@@ -1,0 +1,64 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-image: linear-gradient( 109.6deg,  rgba(61,131,97,1) 11.2%, rgba(28,103,88,1) 91.1% );
+}
+
+header {
+    color: black;
+    background-color: white;
+    padding: 20px 0;
+}
+
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+  }
+
+nav {
+    position: absolute;
+    top: 0px;
+    right: 0;
+  }
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+  }
+  
+  nav a {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    color: rgb(138, 59, 125);
+    text-decoration: underline;
+  }
+  
+h1 {
+    opacity: 0; /* Inicialmente invisível */
+    transform: translateY(-50px); /* Posição inicial acima */
+    animation: titleEntrance 1s forwards; /* Animação de entrada */
+  }
+
+  /* Animação de entrada */
+  @keyframes titleEntrance {
+    to {
+      opacity: 1; /* Torna o título visível */
+      transform: translateY(0); /* Retorna à posição original */
+    }
+  }
+
+  img {
+    max-width: 500px;
+    max-height: 450px;
+    margin: auto;
+    display: block;
+    padding: 20px;
+  }
