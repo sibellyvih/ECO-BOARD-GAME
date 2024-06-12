@@ -123,7 +123,8 @@ main {
 }
 
 main p {
-  font-size: 18px;
+  font-size: 22px;
+  padding: 10px;
 }
 
 main strong {
@@ -133,7 +134,12 @@ main strong {
 .jogo {
   max-width: 1000px;
   max-height: 800px;
-  padding: 20px;
+  padding: 70px;
+}
+
+.imagem-jogo {
+  max-width: 1200px;
+  max-height: 1000px;
 }
 
 .rodape {
