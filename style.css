@@ -22,13 +22,18 @@ body {
 header {
   color: black;
   background: white;
-  padding: 20px 0;
+  padding: 20px 0px;
 }
 
 .caixa {
   position: relative;
-  width: 940px;
   margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.caixa h1 {
+  font-size: 25px;
+  color: rgb(0, 69, 0);
 }
 
 nav {
@@ -79,6 +84,7 @@ h2 {
   color: white;
   background-color: var(--cor-de-fundo-titulo-principal);
   background-image: var(--background-image);
+  flex-wrap: wrap;
   padding: 220px 0;
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
@@ -131,13 +137,13 @@ font-size: 12px;
 }
 
 .agenda2030 {
+  font-family: "Chakra Petch", sans-serif;
   background-color: var(--preto);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   max-width: 2000px;
-  width: 100%;
   margin: 0 auto;
   padding: 20px 0;
 }
@@ -204,17 +210,35 @@ font-size: 12px;
 }
 
 .aba-couteudo-titulo-secundario {
+  font-size: 24px;
   text-align: center;
   color: var(--verde-claro);
 }
 
 .contador {
-  font-size: 20px;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.contador-digito {
+  padding: 0 16px;
   text-align: center;
+  min-width: 100px;
+}
+
+.contador-digito-numero {
+  font-size: 80px;
+  margin: 0;
+}
+
+.contador-digito-texto {
+  color: var(--verde-claro);
+  font-size: 20px;
 }
 
 @media screen and (min-width: 768px) {
-  .botoes-agenda {
+.botoes-agenda {
     display: flex;
   }
 .botao-agenda:first-child {
@@ -231,16 +255,6 @@ font-size: 12px;
   text-align: center;
   background: rgb(48, 96, 52);
   color: white;
-}
-
-.rodape img {
-  max-height: 40px; /* Ajuste a altura da imagem */
-}
-
-.rodape .redes-sociais {
-  display: flex;
-  justify-content: center; /* Centralizar horizontalmente */
-  margin: 0 20px;
 }
 
 .copyright {
