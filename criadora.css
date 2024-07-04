@@ -96,7 +96,6 @@ text-align: justify;
   font-size: 20px;
   padding: 100px;
   display: flex;
-  flex-wrap: wrap;
   align-items: center; /* Alinhar verticalmente */
   gap: 40px; /* Espaçamento entre texto e imagem */
 }
