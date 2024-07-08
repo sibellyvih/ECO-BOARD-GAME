@@ -20,7 +20,7 @@ body {
 header {
   color: black;
   background: white;
-  padding: 20px 0px;
+  padding: 10px 0px;
 }
 
 .caixa {
@@ -31,6 +31,12 @@ header {
 
 .caixa h1 {
   font-size: 25px;
+  color: rgb(0, 69, 0);
+  padding-left: 85px;
+}
+
+.caixa ul {
+  padding-right: 85px;
 }
 
 nav {

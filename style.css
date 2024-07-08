@@ -22,7 +22,7 @@ body {
 header {
   color: black;
   background: white;
-  padding: 20px 0px;
+  padding: 10px 0px;
 }
 
 .caixa {
@@ -34,6 +34,11 @@ header {
 .caixa h1 {
   font-size: 25px;
   color: rgb(0, 69, 0);
+  padding-left: 85px;
+}
+
+.caixa ul {
+  padding-right: 85px;
 }
 
 nav {
@@ -77,17 +82,48 @@ h2 {
   text-align: center;
   padding: 16px 0;
   font-size: 32px;
+  font-family: "Chakra Petch", sans-serif;
 }
 
 .titulo-principal {
-  font-size: 25px;
+  font-size: 23px;
   color: white;
   background-color: var(--cor-de-fundo-titulo-principal);
   background-image: var(--background-image);
   flex-wrap: wrap;
-  padding: 220px 0;
   text-align: center;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Anton SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+.titulo-principal h1 {
+  padding-top: 190px;
+  padding-bottom: 50px;
+}
+
+.apresentacao h2 {
+  text-align: right;
+  padding-right: 10px;
+  font-size: 22px;
+  padding: 1px;
+}
+
+.local {
+  padding-top: 30px;
+  padding-bottom: 120px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.Introducao {
+  padding: 50px;
+}
+
+.Introducao li{
+  font-size: 22px;
+  padding: 5px;
 }
 
 .R {
@@ -247,6 +283,60 @@ flex-wrap: wrap;
 .botao-agenda:last-child {
   border-radius: 0 40px 0 0;
 }
+}
+
+.Objetivos {
+ padding: 50px;
+}
+
+.Objetivos li {
+font-size: 22px;
+}
+
+.Metodologia {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative; /* Adicionado para posicionar as setas */
+  padding: 50px;
+}
+
+.img-metodologia {
+  max-width: 500px;
+  max-height: 450px;
+  margin: auto;
+  display: block;
+}
+
+.conteudo-metodologia {
+  display: flex;
+  align-items: center; /* Alinhar verticalmente */
+  gap: 20px; /* Espaçamento entre texto e imagem */
+}
+
+.Metodologia li {
+  font-size: 22px;
+  padding: 10px 80px;
+}
+
+.Resultados {
+  padding: 80px;
+}
+
+.Resultados li {
+  font-size: 20px;
+}
+
+.Resultados a {
+  color: rgb(19, 93, 0);
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.Resultados img{
+  display: block;
+  padding: 25px;
 }
 
 .rodape {
