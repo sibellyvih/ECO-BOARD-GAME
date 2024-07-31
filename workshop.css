@@ -87,6 +87,22 @@ p {
   text-align: center;
 }
 
+.workshop {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative; /* Adicionado para posicionar as setas */
+}
+
+.workshop blockquote {
+  display: none;
+}
+
+.depoimentos blockquote.active {
+  display: block;
+}
+
+
 img {
   max-width: 500px;
   max-height: 450px;
