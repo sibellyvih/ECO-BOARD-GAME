@@ -165,13 +165,6 @@ img {
   margin: auto; 
 }
 
-figcaption {
-font: italic smaller sans-serif;
-padding: 0px;
-text-align: center;
-font-size: 12px;
-}
-
 .agenda2030 {
   font-family: "Chakra Petch", sans-serif;
   background-color: var(--preto);
@@ -324,8 +317,8 @@ font-size: 22px;
 }
 
 .Resultados li {
-    font-size: 22px;
-    padding: 5px;
+  font-size: 20px;
+  padding: 5px;
 }
 
 .Resultados a {
@@ -335,10 +328,77 @@ font-size: 22px;
   text-decoration: none;
 }
 
-.Resultados img{
+.Resultados img {
   display: block;
   padding: 25px;
+  max-width: 600px;
+  max-height: 550px;
 }
+
+.imagens-conclusao {
+  font-size: 18px;
+  padding: 10px;
+  color: white;
+  background-image: linear-gradient(to right, #4CB8C4 0%, #3CD3AD  51%, #4CB8C4  100%);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Alinhar verticalmente */
+  gap: 20px; /* Espaçamento entre texto e imagem */
+}
+
+blockquote {
+  padding: 5px;
+  }
+
+  .carousel-container {
+    position: relative;
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .carousel-controls {
+    position: absolute;
+    top: 50%;
+    font-size: 80px;
+    color: black;
+    padding: 16px;
+    cursor: pointer;
+    transform: translateY(-50%);
+    user-select: none;
+  }
+  
+  .carousel-controls.left {
+    left: -50px;
+  }
+  
+  .carousel-controls.right {
+    right: -50px;
+  }
+  
+  blockquote {
+    display: none;
+    text-align: center;
+  }
+  
+  blockquote.active {
+    display: block;
+  }
+  
+  .content img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  figcaption {
+    font-style: italic;
+    margin-top: 8px;
+    font-size: 18px;
+    text-align: center;
+  }
 
 .rodape {
   font-size: 18px;

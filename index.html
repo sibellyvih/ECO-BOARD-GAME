@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="recet.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="main.js">
     <title>Projeto Eco Board Game</title>
   </head>
      <body>
@@ -48,8 +47,8 @@
           <li>A <strong>Agenda 2030</strong> criada pela ONU, desenvolveu por meio desta agenda a ODS.</li>
           <li>Erradicar problemas ambientais.</li>
           <li><strong>Ações educacionais</strong> formam cidadãos responsáveis e preocupados com questões ambientais e de sustentabilidade.</li>
-          <li><strong>Jogos digitais</strong> como objeto de aprendizagem.</li>
           <li>Graças a massificação das <strong>tecnologias digitais de informação e comunicação (TDIC)</strong>, as barreiras temporais e mesmo as espaciais começaram a ser eliminadas, estabelecendo práticas pedagógicas diferenciadas e metodologias inovadoras.</li>
+          <li><strong>Jogos digitais</strong> como objeto de aprendizagem.</li>
         </ul>
 
         <div class="R">
@@ -129,31 +128,130 @@
         </section>
 
         <section class="Metodologia">
-          <h2>Metolodologia</h2>
+          <h2>Metodologia</h2>
             <div class="conteudo-metodologia">
-          <ul>
-            <li>Canva</li>
-            <li>Scratch</li>
-            <li>VS Code</li>
-            <li>GitHub</li>
-          </ul>
+              <div class="jogo-fisico">
+                <h3>Jogo físico</h3>
+              </div>
+            </div>
+            <div class="conteudo-metodologia">
+              <div class="jogo-digital">
+                <h3>Jogo digital</h3>
+                <h4>Desenvolvido no Scratch</h4>
           <figure>
           <img class="img-metodologia" src="2 - Game.png" alt="Tabuleiro do jogo no Scratch">
           <figcaption>Fonte: Autoral.</figcaption>
-        </figure>
-           </div>
+          </figure>
+
+          </figure>
+          <img class="img-metodologia" src="Jogo de tabuleiro da sustentabilidade.png" alt="Tabuleiro do jogo">
+          <figcaption>Fonte: Autoral.</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="conteudo-metodologia">
+        <div class="site">
+          <h3>Site</h3>
+          <h4>Programado no VS Code</h4>
+          <h4>Postado no GitHub</h4>
+          <figure>
+            <img class="img-metodologia" src="vc code.png" alt="programação do site">
+            <figcaption>Fonte: Autoral.</figcaption>
+          </figure>
+        </div>
+      </div>
         </section>
 
-        <secion class="Resultados">
-          <h2>Considerações finais</h2>
-          <ul>
+        <section class="Resultados">
+          <h2>Conclusão</h2>
           <li>Acreditamos que contribuímos significativamente para a formação desses alunos como cidadãos conscientes e comprometidos com a proteção do nosso planeta.</li>
-          <li> Este projeto é um passo inicial importante para valorizar o ensino da educação ambiental nas escolas, de maneira que os alunos permaneçam engajados e motivados a aprender mais sobre sustentabilidade e seus princípios. </li>
+          <li> Este projeto é um passo inicial importante para valorizar o ensino da educação ambiental nas escolas, de maneira que os alunos permaneçam engajados e motivados a aprender mais sobre sustentabilidade e seus princípios.</li>
+          <li>Efeitos positivos que foram notados nos alunos após a aplicação do jogo:</li>
+          <div class="botoes">
+            <button class="botao">Melhor conhecimento ecológico</button>
+            <button class="botao">Pensamento crítico</button>
+            <button class="botao">Aprenderam mais práticas sustentáveis</button>
+            <button class="botao">Trabalharam em equipe</button>
+            <button class="botao">Adquiriram ética ambiental</button>
+          </div>
+          
+        <div class="imagens-conclusão">
+
+          
+          <div class="carousel-container">
+            <div class="carousel-controls left" onclick="changeDepoimento(-1)">&#10094;</div>
+            
+            <blockquote class="active">
+              <div class="content">
+                <img src="Apresentando.jpeg" alt="Apresentando">
+                <figcaption>Apresentando o projeto. Fonte: Autoral.</figcaption>
+              </div>
+            </blockquote>
+          
+            <blockquote>
+              <div class="content">
+                <img src="Apresentando o jogo digital.jpeg" alt="Apresentação do jogo digital">
+                <figcaption>Apresentação do jogo digital. Fonte: Autoral.</figcaption>
+              </div>
+            </blockquote>
+          
+            <blockquote>
+              <div class="content">
+                <img src="Jogando o jogo.jpeg" alt="Jogando o jogo físico">
+                <figcaption>Jogando o jogo físico. Fonte: Autoral.</figcaption>
+              </div>
+            </blockquote>
+          
+            <blockquote>
+              <div class="content">
+                <img src="Foto com os estudantes.jpeg" alt="Foto com os alunos">
+                <figcaption>Foto com os alunos. Fonte: Autoral.</figcaption>
+              </div>
+            </blockquote>
+          
+            <blockquote>
+              <div class="content">
+                <img src="Mimos.jpeg" alt="Mimos">
+                <figcaption>Entrega de uma pequena lembrança para as crianças, envelopes com sementes de girassol e o QR Code do Jogo</figcaption>
+              </div>
+            </blockquote>
+          
+            <div class="carousel-controls right" onclick="changeDepoimento(1)">&#10095;</div>
+          </div>
+          
+          <script>
+            let currentIndex = 0;
+            const depoimentos = document.querySelectorAll('blockquote');
+            
+            function showDepoimento(index) {
+              // Certifique-se de que o índice não ultrapasse os limites
+              if (index < 0) {
+                currentIndex = depoimentos.length - 1;
+              } else if (index >= depoimentos.length) {
+                currentIndex = 0;
+              }
+          
+              // Oculta todos os depoimentos
+              depoimentos.forEach(dep => dep.classList.remove('active'));
+          
+              // Exibe apenas o depoimento com o índice atual
+              depoimentos[currentIndex].classList.add('active');
+            }
+          
+            function changeDepoimento(n) {
+              showDepoimento(currentIndex += n);
+            }
+          
+            // Exibe o primeiro depoimento ao carregar a página
+            showDepoimento(currentIndex);
+          </script>
+          
+          
+          
           <li>O jogo digital está em fase de construção no momento;</li>
           <li><a href="https://scratch.mit.edu/projects/1003124883">Clique aqui para acessar o jogo no Scratch</a></li>
           <li>Ou conheça a página que o jogo está vinculado <a href="game.html">clicando aqui.</a></li>
-          </ul>
-        </secion>
+        </section>
         
         <footer class="rodape">
           <h2><strong>Eco Board Game<br>
