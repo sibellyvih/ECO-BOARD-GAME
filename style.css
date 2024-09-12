@@ -403,7 +403,7 @@ blockquote {
   }
 
   .acessar-jogo {
-    background-image:url(Fundo Jogo.jpg);
+    background-image:url(Fundo\ Jogo.jpg);
     background-size: cover; /* Ajusta a imagem para cobrir toda a div */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Evita a repetição da imagem */
