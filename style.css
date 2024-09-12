@@ -11,10 +11,12 @@
   --texto-fundo: rgb(0, 28, 0);
 }
 
-body {
+html, body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
+  height: 100%;
+  width: 100%;
   color: var(--preto);
   background: var(--branco);
 }
@@ -399,6 +401,40 @@ blockquote {
     font-size: 18px;
     text-align: center;
   }
+
+  .acessar-jogo {
+    background-image:url(Fundo\ Jogo.jpg);
+    background-size: cover; /* Ajusta a imagem para cobrir toda a div */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    color: white; /* Define a cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 50px; /* Adiciona espaço ao redor do texto */
+    height: 700px; /* Define a altura da div */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Merriweather", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+ .acessar-jogo ul {
+    font-size: 25px;
+    color: white;
+    padding-top: 420px;
+ }
+
+ .acessar-jogo h2 {
+  font-size: 60px;
+  font-family: "Merriweather", serif;
+ }
+
+ .acessar-jogo a {
+  color: var(--verde-claro);
+ }
 
 .rodape {
   font-size: 18px;
