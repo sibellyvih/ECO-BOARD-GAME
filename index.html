@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="recet.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>Projeto Eco Board Game</title>
   </head>
      <body>
@@ -50,6 +51,7 @@
           <li>Graças a massificação das <strong>tecnologias digitais de informação e comunicação (TDIC)</strong>, as barreiras temporais e mesmo as espaciais começaram a ser eliminadas, estabelecendo práticas pedagógicas diferenciadas e metodologias inovadoras.</li>
           <li><strong>Jogos digitais</strong> como objeto de aprendizagem.</li>
         </ul>
+      </section>
 
         <div class="R">
         <h2>Os 5 R's da sustenbilidade</h2>
@@ -113,7 +115,6 @@
           </div>
         </section>
         <script src="main.js"></script>
-      </section>
 
         <section class="Objetivos">
           <h2>Objetivos</h2>
@@ -131,40 +132,62 @@
           <h2>Metodologia</h2>
             <div class="conteudo-metodologia">
               <div class="jogo-fisico">
-                <h3>Jogo físico</h3>
+                <h2>Jogo físico</h2>
+                <figure>
+                  <img class="img-metodologia" src="foto-sibelly.jpeg" alt="Criadora com o jogo físico">
+                  <figcaption>Fonte: Autoral.</figcaption>
+                  </figure>
+                  <ul>
+                    <li>Canva como principal plataforma utilizada;</li>
+                    <li>Desenvolvimento do banner;</li>
+                    <li>Criação das cartas;</li>
+                    <li>Tampinhas de garrafa como peões;</li>
+                    <li>Dado grande feito de EVA.</li>
+                  </ul>
               </div>
             </div>
             <div class="conteudo-metodologia">
               <div class="jogo-digital">
-                <h3>Jogo digital</h3>
-                <h4>Desenvolvido no Scratch</h4>
+                <h2>Jogo digital</h2>
           <figure>
           <img class="img-metodologia" src="2 - Game.png" alt="Tabuleiro do jogo no Scratch">
           <figcaption>Fonte: Autoral.</figcaption>
           </figure>
 
-          </figure>
+          <figure>
           <img class="img-metodologia" src="Jogo de tabuleiro da sustentabilidade.png" alt="Tabuleiro do jogo">
           <figcaption>Fonte: Autoral.</figcaption>
           </figure>
+          
+          <ul>
+            <li>Desenvolvido no <strong>Scratch</strong>;</li>
+            <li>Versão simplificada;</li>
+            <li>Imagens e sprites criados na plataforma;</li>
+            <li>Sons utilizados da biblioteca;</li>
+            <li>Intruções e regras todas explicadas pelo Tio Green.</li>
+          </ul>
+
         </div>
       </div>
       <div class="conteudo-metodologia">
         <div class="site">
-          <h3>Site</h3>
-          <h4>Programado no VS Code</h4>
-          <h4>Postado no GitHub</h4>
+          <h2>Site</h2>
           <figure>
             <img class="img-metodologia" src="vc code.png" alt="programação do site">
             <figcaption>Fonte: Autoral.</figcaption>
           </figure>
+          <ul>
+          <li>Programado no VS Code;</li>
+          <li>Linguagens usadas: HTML, CSS e JavaScript;</li>
+          <li>Postado em um repositório no GitHub.</li>
+          </ul>
         </div>
       </div>
         </section>
 
         <section class="Resultados">
           <h2>Conclusão</h2>
-          <li>Acreditamos que contribuímos significativamente para a formação desses alunos como cidadãos conscientes e comprometidos com a proteção do nosso planeta.</li>
+          <li>Contribuímos significativamente para a formação desses alunos como cidadãos conscientes e comprometidos com a proteção do nosso planeta.</li>
           <li> Este projeto é um passo inicial importante para valorizar o ensino da educação ambiental nas escolas, de maneira que os alunos permaneçam engajados e motivados a aprender mais sobre sustentabilidade e seus princípios.</li>
           <li>Efeitos positivos que foram notados nos alunos após a aplicação do jogo:</li>
           <div class="botoes">
@@ -174,10 +197,51 @@
             <button class="botao">Trabalharam em equipe</button>
             <button class="botao">Adquiriram ética ambiental</button>
           </div>
+
+          <h2>Questões acertadas</h2>
+          <ul>
+            <li>11 equipes jogaram;</li>
+            <li>Todas as equipes responderam pelo menos uma questão;</li>
+            <li>Apenas uma equipe errou uma questão;</li>
+            <li>90% da turma acertou.</li>
+          </ul>
+
+<canvas id="meuGrafico"></canvas>
+
+<script>
+  var ctx = document.getElementById('meuGrafico').getContext('2d');
+  var meuGrafico = new Chart(ctx, {
+    type: 'pie', // Tipo de gráfico
+    data: {
+      labels: ['Questões acertadas', 'Questões erradas'], // Rótulos
+      datasets: [{
+        label: 'Quantidade de equipes',
+        data: [10, 1], // Dados para o gráfico
+        backgroundColor: [
+          'green',
+          'red'
+        ],
+        borderColor: [
+          'green',
+          'red'
+        ],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      responsive: true, // Gráfico responsivo
+      plugins: {
+        legend: {
+          position: 'top', // Posição da legenda
+        }
+      }
+    }
+  });
+</script>
+ 
           
         <div class="imagens-conclusão">
 
-          
           <div class="carousel-container">
             <div class="carousel-controls left" onclick="changeDepoimento(-1)">&#10094;</div>
             

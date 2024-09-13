@@ -174,8 +174,8 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 2000px;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
   padding: 20px 0;
 }
 
@@ -289,29 +289,45 @@ font-size: 22px;
 }
 
 .Metodologia {
-  width: 60%;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
   text-align: center;
-  position: relative; /* Adicionado para posicionar as setas */
-  padding: 50px;
+  padding: 30px;
+  background-color: #FA8BFF;
+  background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
 }
 
 .img-metodologia {
-  max-width: 500px;
-  max-height: 450px;
-  margin: auto;
-  display: block;
+  max-width: 300px;
+  margin-right: 20px; /* Espaço entre a imagem e a lista */
 }
 
 .conteudo-metodologia {
-  display: flex;
-  align-items: center; /* Alinhar verticalmente */
-  gap: 20px; /* Espaçamento entre texto e imagem */
+  display: flex; /* Flexbox aplicado aqui para alinhar conteúdo */
+  justify-content: space-between; /* Espaço entre a lista e a imagem */
+  align-items: flex-start; /* Alinhamento no topo */
+  margin-bottom: 30px; /* Espaçamento entre blocos de conteúdo */
+  padding: 20px;
+}
+
+.Metodologia ul {
+  text-align: left; /* Alinhar o texto da lista à esquerda */
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .Metodologia li {
-  font-size: 22px;
-  padding: 10px 80px;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.jogo-fisico, .jogo-digital, .site {
+  display: flex;
+  flex-direction: row; /* Garantir que a imagem e o texto fiquem lado a lado */
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%; /* Garantir que o conteúdo use toda a largura disponível */
 }
 
 .Resultados {
@@ -328,6 +344,11 @@ font-size: 22px;
   font-weight: bold;
   font-size: 20px;
   text-decoration: none;
+}
+
+#meuGrafico {
+  width: 6%; /* Ajuste a largura */
+  height: 5%;
 }
 
 .Resultados img {
