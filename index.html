@@ -198,49 +198,53 @@
             <button class="botao">Adquiriram ética ambiental</button>
           </div>
 
-          <h2>Questões acertadas</h2>
-          <ul>
-            <li>11 equipes jogaram;</li>
-            <li>Todas as equipes responderam pelo menos uma questão;</li>
-            <li>Apenas uma equipe errou uma questão;</li>
-            <li>90% da turma acertou.</li>
-          </ul>
+          <h2>Estatísticas</h2>
+          
+  <div class="estatisticas">
+    <canvas id="meuGrafico"></canvas>
+    <script>
+      var ctx = document.getElementById('meuGrafico').getContext('2d');
+      var meuGrafico = new Chart(ctx, {
+        type: 'pie', // Tipo de gráfico
+        data: {
+          labels: ['Questões acertadas', 'Questões erradas'], // Rótulos
+          datasets: [{
+            label: 'Quantidade de equipes',
+            data: [10, 1], // Dados para o gráfico
+            backgroundColor: [
+              'lightgreen',
+              'lightcoral'
+            ],
 
-<canvas id="meuGrafico"></canvas>
-
-<script>
-  var ctx = document.getElementById('meuGrafico').getContext('2d');
-  var meuGrafico = new Chart(ctx, {
-    type: 'pie', // Tipo de gráfico
-    data: {
-      labels: ['Questões acertadas', 'Questões erradas'], // Rótulos
-      datasets: [{
-        label: 'Quantidade de equipes',
-        data: [10, 1], // Dados para o gráfico
-        backgroundColor: [
-          'green',
-          'red'
-        ],
-        borderColor: [
-          'green',
-          'red'
-        ],
-        borderWidth: 1
-      }]
-    },
-    options: {
-      responsive: true, // Gráfico responsivo
-      plugins: {
-        legend: {
-          position: 'top', // Posição da legenda
+            borderColor: [
+              'green',
+              'red'
+            ],
+            borderWidth: 1
+          }]
+        },
+        options: {
+          responsive: true, // Gráfico responsivo
+          plugins: {
+            legend: {
+              position: 'top', // Posição da legenda
+            }
+          }
         }
-      }
-    }
-  });
-</script>
+      });
+    </script>
+    <ul>
+      <li>11 equipes jogaram;</li>
+      <li>Todas as equipes responderam pelo menos uma questão;</li>
+      <li>Apenas uma equipe errou uma questão;</li>
+      <li>90% da turma acertou;</li>
+      <li>A questão errada foi trabalhada novamente para que a equipe pudesse entender o porquê estava errado.</li>
+    </ul>
+  </div>
  
           
         <div class="imagens-conclusão">
+          <h2>Imagens da aplicação do projeto com os alunos do fundamental I</h2>
 
           <div class="carousel-container">
             <div class="carousel-controls left" onclick="changeDepoimento(-1)">&#10094;</div>

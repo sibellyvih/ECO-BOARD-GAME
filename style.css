@@ -45,7 +45,7 @@ header {
 
 nav {
   position: absolute;
-  top: 0px;
+  top: 20px;
   right: 0;
 }
 
@@ -94,10 +94,9 @@ h2 {
   background-image: var(--background-image);
   flex-wrap: wrap;
   text-align: center;
-  font-family: "Anton SC", sans-serif;
+  font-family: "Chakra Petch", sans-serif;
   font-weight: 400;
   font-style: normal;
-
 }
 
 .titulo-principal h1 {
@@ -331,7 +330,8 @@ font-size: 22px;
 }
 
 .Resultados {
-  padding: 80px;
+  padding: 60px;
+  width: 100%; /* A largura da div se ajustará ao tamanho da tela */
 }
 
 .Resultados li {
@@ -346,21 +346,33 @@ font-size: 22px;
   text-decoration: none;
 }
 
-#meuGrafico {
-  width: 6%; /* Ajuste a largura */
-  height: 5%;
+.estatisticas {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;    /* Centraliza verticalmente */
+  height: 80vh;          /* Opcional, ajusta a altura da div */
+  padding: 10px;
 }
 
-.Resultados img {
+.estatisticas h2 {
+  padding: 0px;
+}
+
+#meuGrafico {
+  max-width: 350px;   /* Largura do gráfico */
+  max-height: 250px;  /* Altura do gráfico */
+}
+
+.imagens-conclusão img {
   display: block;
-  padding: 25px;
-  max-width: 600px;
-  max-height: 550px;
+  padding: 1px;
+  max-width: 300px;
+  max-height: 450px;
 }
 
 .imagens-conclusao {
   font-size: 18px;
-  padding: 10px;
+  padding: 0px;
   color: white;
   background-image: linear-gradient(to right, #4CB8C4 0%, #3CD3AD  51%, #4CB8C4  100%);
 }
@@ -369,37 +381,40 @@ font-size: 22px;
   display: flex;
   flex-direction: column;
   align-items: center; /* Alinhar verticalmente */
-  gap: 20px; /* Espaçamento entre texto e imagem */
+  gap: 0px; /* Espaçamento entre texto e imagem */
+  padding: 0px;
 }
 
 blockquote {
-  padding: 5px;
+  padding: 0px;
   }
 
-  .carousel-container {
-    position: relative;
-    max-width: 700px;
-    margin: auto;
-    text-align: center;
-  }
+.carousel-container {
+  position: relative;
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+}
   
-  .carousel-controls {
-    position: absolute;
-    top: 50%;
-    font-size: 80px;
-    color: black;
-    padding: 16px;
-    cursor: pointer;
-    transform: translateY(-50%);
-    user-select: none;
-  }
+.carousel-controls {
+  position: absolute;
+  top: 50%;
+  font-size: 70px;
+  color: black;
+  padding: 16px;
+  cursor: pointer;
+  transform: translateY(-50%);
+  user-select: none;
+}
   
   .carousel-controls.left {
-    left: -50px;
+    left: 0px;
+    padding: 0px 0px;
   }
   
   .carousel-controls.right {
-    right: -50px;
+    right: 0px;
+    padding: 0px 0px;
   }
   
   blockquote {
@@ -430,8 +445,8 @@ blockquote {
     background-repeat: no-repeat; /* Evita a repetição da imagem */
     color: white; /* Define a cor do texto */
     text-align: center; /* Centraliza o texto */
-    padding: 50px; /* Adiciona espaço ao redor do texto */
-    height: 700px; /* Define a altura da div */
+    padding: 10px; /* Adiciona espaço ao redor do texto */
+    height: 800px; /* Define a altura da div */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -445,11 +460,11 @@ blockquote {
  .acessar-jogo ul {
     font-size: 25px;
     color: white;
-    padding-top: 420px;
+    padding-top: 400px;
  }
 
  .acessar-jogo h2 {
-  font-size: 60px;
+  font-size: 50px;
   font-family: "Merriweather", serif;
  }
 
