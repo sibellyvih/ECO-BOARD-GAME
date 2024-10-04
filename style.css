@@ -35,7 +35,7 @@ header {
 
 .caixa h1 {
   font-size: 25px;
-  color: rgb(0, 69, 0);
+  color: rgb(1, 101, 1);
   padding-left: 85px;
 }
 
@@ -329,6 +329,10 @@ font-size: 22px;
   width: 100%; /* Garantir que o conteúdo use toda a largura disponível */
 }
 
+.conclusao {
+  padding: 50px;
+}
+
 .Resultados {
   padding: 60px;
   width: 100%; /* A largura da div se ajustará ao tamanho da tela */
@@ -344,17 +348,19 @@ font-size: 22px;
   font-weight: bold;
   font-size: 20px;
   text-decoration: none;
+  padding: 15px;
+}
+
+.titulo-grafico {
+  padding: 15px;
 }
 
 .estatisticas {
+  font-size: 20px;
   display: flex;
   justify-content: center; /* Centraliza horizontalmente */
   align-items: center;    /* Centraliza verticalmente */
-  height: 80vh;          /* Opcional, ajusta a altura da div */
-  padding: 10px;
-}
-
-.estatisticas h2 {
+  height: 40vh;          /* Opcional, ajusta a altura da div */
   padding: 0px;
 }
 
@@ -372,9 +378,7 @@ font-size: 22px;
 
 .imagens-conclusao {
   font-size: 18px;
-  padding: 0px;
-  color: white;
-  background-image: linear-gradient(to right, #4CB8C4 0%, #3CD3AD  51%, #4CB8C4  100%);
+  padding: 50px;
 }
 
 .content {

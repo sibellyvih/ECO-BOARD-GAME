@@ -96,7 +96,7 @@ h2 {
 }
 
 p {
-  font-size: large;
+  font-size: 22px;
   text-align: center;
 }
 
@@ -106,15 +106,6 @@ p {
   text-align: center;
   position: relative; /* Adicionado para posicionar as setas */
 }
-
-.workshop blockquote {
-  display: none;
-}
-
-.depoimentos blockquote.active {
-  display: block;
-}
-
 
 img {
   max-width: 500px;
