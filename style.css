@@ -450,7 +450,7 @@ blockquote {
     color: white; /* Define a cor do texto */
     text-align: center; /* Centraliza o texto */
     padding: 10px; /* Adiciona espaço ao redor do texto */
-    height: 800px; /* Define a altura da div */
+    height: 700px; /* Define a altura da div */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -474,6 +474,20 @@ blockquote {
 
  .acessar-jogo a {
   color: var(--verde-claro);
+ }
+
+ .qr-code {
+  background-color: #306034;
+  background-image: linear-gradient(0deg, #306034 3%, #73f576 50%, #68ebf5 100%);
+  text-align: center;
+  color: black;
+  height: 450px; /* Define a altura da div */
+  padding: 10px;
+ }
+ 
+ .img-qr-code{
+  max-width: 250px;
+  max-height: 400px;
  }
 
 .rodape {
