@@ -258,6 +258,71 @@
   </script>
 </div>
 
+<div class="imagens-conclusao">
+  <h2>Imagens da apresentação na sala de recursos NAAH/S</h2>
+
+  <div class="carousel-container" id="carousel1">
+    <div class="carousel-controls left" onclick="changeApresentando('carousel1', -1)">&#10094;</div>
+    
+    <blockquote class="active">
+      <div class="content">
+        <img src="Apresentação_1.jpeg" alt="Foto apresentando aos alunos da sala de recursos">
+        <figcaption>Apresentando aos alunos da sala de recursos NAAH/S. Fonte: Autoral.</figcaption>
+      </div>
+    </blockquote>
+  
+    <blockquote>
+      <div class="content">
+        <img src="Apresentação_2.jpeg" alt="Foto apresentando aos alunos da sala de recursos">
+        <figcaption>Apresentando aos alunos da sala de recursos NAAH/S. Fonte: Autoral.</figcaption>
+      </div>
+    </blockquote>
+  
+    <div class="carousel-controls right" onclick="changeApresentando('carousel1', 1)">&#10095;</div>
+  </div>
+
+  <script>
+    // Controle de índices para cada carrossel
+    const carrosselIndices = {};
+
+    function changeApresentando(carouselId, direction) {
+      const carousel = document.getElementById(carouselId);
+      const slides = carousel.querySelectorAll('blockquote');
+
+      if (!(carouselId in carrosselIndices)) {
+        carrosselIndices[carouselId] = 0; // Inicializa o índice para este carrossel
+      }
+
+      // Atualiza o índice
+      carrosselIndices[carouselId] = (carrosselIndices[carouselId] + direction + slides.length) % slides.length;
+
+      // Atualiza a exibição
+      slides.forEach((slide, index) => {
+        slide.classList.toggle('active', index === carrosselIndices[carouselId]);
+      });
+    }
+
+    // Inicializa todos os carrosséis
+    document.querySelectorAll('.carousel-container').forEach((carousel) => {
+      const slides = carousel.querySelectorAll('blockquote');
+      if (slides.length > 0) {
+        slides.forEach((slide) => slide.classList.remove('active'));
+        slides[0].classList.add('active');
+      }
+    });
+  </script>
+
+  <style>
+    blockquote {
+      display: none;
+    }
+    blockquote.active {
+      display: block;
+    }
+  </style>
+</div>
+
+
   <h2 class="titulo-grafico">Estatísticas</h2>
   <div class="estatisticas">
     <canvas id="meuGrafico"></canvas>
