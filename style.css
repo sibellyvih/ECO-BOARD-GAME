@@ -287,6 +287,11 @@ flex-wrap: wrap;
 font-size: 22px;
 }
 
+.Objetivos p {
+  font-size: 22px;
+  text-align: center;
+  }
+
 .Metodologia {
   width: 100%;
   margin: 0;
@@ -307,6 +312,13 @@ font-size: 22px;
   align-items: flex-start; /* Alinhamento no topo */
   margin-bottom: 30px; /* Espaçamento entre blocos de conteúdo */
   padding: 20px;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: #333;
+  margin: 20px 0;
 }
 
 .Metodologia ul {
@@ -450,7 +462,7 @@ blockquote {
     color: white; /* Define a cor do texto */
     text-align: center; /* Centraliza o texto */
     padding: 10px; /* Adiciona espaço ao redor do texto */
-    height: 700px; /* Define a altura da div */
+    height: 800px; /* Define a altura da div */
     display: flex;
     justify-content: center;
     align-items: center;

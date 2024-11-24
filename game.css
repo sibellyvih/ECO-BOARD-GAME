@@ -100,6 +100,20 @@ h2 {
   font-size: 32px;
 }
 
+.instrucoes {
+  text-align: center;
+}
+
+.instrucoes img {
+  max-width: 400px;
+  max-height: 500px;
+}
+
+.instrucoes li {
+  padding: 10px;
+  font-size: 20px;
+}
+
 main {
     text-align: center;
   }
