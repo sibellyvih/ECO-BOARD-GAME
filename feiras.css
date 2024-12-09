@@ -96,21 +96,38 @@ h1 {
 
 h2{
     text-align: center;
+    padding: 20px;
 }
 
 .fenaahs {
     padding: 20px;
+    text-align: center;
 }
 
 .FIciencias {
-    padding: 20px;
+    padding: 20px 0 0 0;
+    text-align: center;
 }
 
 p {
     padding: 20px;
 }
 
-.img-inicio {
+iframe {
+    padding: 40px;
+}
+
+.imagens-container {
+    display: flex;
+    justify-content: center; /* Centraliza o conjunto de figuras no container */
+    gap: 5px; /* Reduz o espaço entre as figuras */
+}
+
+.imagens-container figure {
+    text-align: center; /* Centraliza o texto das legendas */
+}
+
+.imagens-premiacao {
     max-width: 350px;
     height: auto;
 }
@@ -118,6 +135,12 @@ p {
 figcaption{
   font-size: 15px;
   text-align: center;
+}
+
+.premiacao {
+    background-color: #aaede1;
+    background-image: linear-gradient(0deg, #aaede1 0%, #69e7d6 50%, #00a989 100%);
+    
 }
 
 .rodape {
