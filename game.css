@@ -98,10 +98,12 @@ h2 {
   text-align: center;
   padding: 16px 0;
   font-size: 32px;
+  font-family: "Chakra Petch", sans-serif;
 }
 
 .instrucoes {
   text-align: center;
+  font-family: "Chakra Petch", sans-serif;
 }
 
 .instrucoes img {
@@ -114,8 +116,13 @@ h2 {
   font-size: 20px;
 }
 
+.efeito-instrucoes, .titulo {
+  visibility: hidden;
+}
+
 main {
     text-align: center;
+    font-family: "Chakra Petch", sans-serif;
   }
   
 main p {
@@ -138,6 +145,10 @@ main strong {
     max-width: 1200px;
     max-height: 1000px;
     padding: 25px;
+  }
+
+  figcaption {
+    font-family: "Chakra Petch", sans-serif;
   }
 
   .rodape {

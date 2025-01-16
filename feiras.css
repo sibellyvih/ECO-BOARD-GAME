@@ -99,14 +99,27 @@ h2{
     padding: 20px;
 }
 
+.titulo {
+  visibility: hidden;
+}
+
 .fenaahs {
     padding: 20px;
     text-align: center;
+    font-family: "Chakra Petch", sans-serif;
 }
 
 .FIciencias {
     padding: 20px 0 0 0;
+    font-family: "Chakra Petch", sans-serif;
     text-align: center;
+    color: var(--branco);
+    background-color: #aaede1;
+    background-image: linear-gradient(0deg, #57dac2 0%, #55c1b3 50%, #00a98ad2 100%);
+}
+
+.logo-ficiencias {
+  width: 50%;
 }
 
 p {
@@ -135,12 +148,6 @@ iframe {
 figcaption{
   font-size: 15px;
   text-align: center;
-}
-
-.premiacao {
-    background-color: #aaede1;
-    background-image: linear-gradient(0deg, #aaede1 0%, #69e7d6 50%, #00a989 100%);
-    
 }
 
 .rodape {

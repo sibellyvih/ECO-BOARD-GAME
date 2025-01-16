@@ -118,6 +118,14 @@ h2 {
   font-size: 14px;
 }
 
+.titulo, .efeito-no-conteudo {
+  visibility: hidden;
+}
+
+figcaption{
+  font-size: 16px;
+}
+
 .Introducao {
   padding: 50px;
 }
@@ -125,11 +133,13 @@ h2 {
 .Introducao li{
   font-size: 22px;
   padding: 5px;
+  font-family: "Chakra Petch", sans-serif;
 }
 
 .R {
   padding: 20px;
   text-align: center;
+  font-family: "Chakra Petch", sans-serif;
 }
 
 .R p{
@@ -143,6 +153,7 @@ h2 {
 
 .botao {
   font-size: 20px;
+  font-family: "Chakra Petch", sans-serif;
   background-image: linear-gradient(to right, #348F50 0%, #56d3a5  51%, #348F50  100%);
   margin: 10px;
   padding: 5px 5px;
@@ -285,6 +296,7 @@ flex-wrap: wrap;
 
 .Objetivos li {
 font-size: 22px;
+font-family: "Chakra Petch", sans-serif;
 }
 
 .Objetivos p {
@@ -296,6 +308,7 @@ font-size: 22px;
   width: 100%;
   margin: 0;
   text-align: center;
+  font-family: "Chakra Petch", sans-serif;
   padding: 30px;
   background-color: #FA8BFF;
   background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
@@ -343,11 +356,13 @@ hr {
 
 .conclusao {
   padding: 50px;
+  font-family: "Chakra Petch", sans-serif;
 }
 
 .Resultados {
   padding: 60px;
   width: 100%; /* A largura da div se ajustará ao tamanho da tela */
+  font-family: "Chakra Petch", sans-serif;
 }
 
 .Resultados li {
