@@ -18,13 +18,15 @@ html, body {
   height: 100%;
   width: 100%;
   color: var(--preto);
-  background: var(--branco);
+  background: rgb(254,255,216);
+  background: linear-gradient(90deg, rgba(254,255,216,1) 0%, rgba(255,255,255,1) 20%, rgba(255,255,255,1) 80%, rgba(254,255,216,1) 100%);
 }
 
 header {
   color: black;
-  background-color: white;
-  padding: 10px 0px;
+  background: rgb(192,255,168);
+  background: rgb(254,255,216);
+  background: linear-gradient(90deg, rgba(254,255,216,1) 0%, rgba(255,255,255,1) 20%, rgba(255,255,255,1) 80%, rgba(254,255,216,1) 100%);
 }
 
 .caixa {
@@ -94,6 +96,10 @@ h1 {
   }
 }
 
+.esquerda, .direita {
+  visibility: hidden;
+}
+
 p {
     padding: 20px;
 }
@@ -104,8 +110,27 @@ p {
 }
 
 .img-inicio {
-    max-width: 350px;
-    height: auto;
+  width: 350px;
+  height: auto;
+}
+
+.esquerda {
+  position: relative;
+  animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+  0%{
+    top:0;
+  }
+  100%{
+    top:30px;
+  }
+}
+
+figcaption{
+  font-size: 15px;
+  text-align: center;
 }
 
 .apresentacao {
@@ -114,6 +139,7 @@ p {
     display: flex;
     align-items: center; /* Alinhar verticalmente */
     gap: 40px; /* Espaçamento entre texto e imagem */
+    font-family:"Chakra Petch", sans-serif;
 }
 
 .rodape {

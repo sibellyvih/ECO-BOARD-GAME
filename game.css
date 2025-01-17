@@ -18,7 +18,8 @@ html, body {
   height: 100%;
   width: 100%;
   color: var(--branco);
-  background: var(--preto);
+  background: rgb(5,71,0);
+  background: linear-gradient(90deg, rgba(5,71,0,1) 0%, rgba(2,21,0,1) 10%, rgba(0,0,0,1) 20%, rgba(0,0,0,1) 80%, rgba(2,21,0,1) 90%, rgba(5,71,0,1) 100%);
 }
 
 header {
@@ -116,7 +117,7 @@ h2 {
   font-size: 20px;
 }
 
-.efeito-instrucoes, .titulo {
+.efeito-instrucoes, .titulo, .aparecer {
   visibility: hidden;
 }
 

@@ -18,7 +18,8 @@ html, body {
   height: 100%;
   width: 100%;
   color: var(--preto);
-  background: var(--branco);
+  background: rgb(254,255,216);
+  background: linear-gradient(90deg, rgba(254,255,216,1) 0%, rgba(255,255,255,1) 20%, rgba(255,255,255,1) 80%, rgba(254,255,216,1) 100%);
 }
 
 header {
@@ -99,7 +100,7 @@ h2{
     padding: 20px;
 }
 
-.titulo {
+.titulo, .efeito-no-conteudo, .efeito-na-imagem1, .efeito-na-imagem2, .efeito-na-imagem3, .efeito-na-imagem4 {
   visibility: hidden;
 }
 
@@ -116,6 +117,10 @@ h2{
     color: var(--branco);
     background-color: #aaede1;
     background-image: linear-gradient(0deg, #57dac2 0%, #55c1b3 50%, #00a98ad2 100%);
+}
+
+.logo-fenaahs {
+  width: 60%;
 }
 
 .logo-ficiencias {
