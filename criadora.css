@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
 
 :root {
-  --cor-de-fundo-titulo-principal:  #F4D03F; 
+  --cor-de-fundo-titulo-principal: #F4D03F;
   --background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
   --verde-claro: rgb(0, 255, 0);
   --branco: white;
   --preto: black;
   --botao-ativo: rgb(0, 88, 0);
-  --botao-inativo:rgb(0, 51, 0);
+  --botao-inativo: rgb(0, 51, 0);
   --texto-fundo: rgb(0, 28, 0);
 }
 
@@ -18,15 +18,15 @@ html, body {
   height: 100%;
   width: 100%;
   color: var(--preto);
-  background: rgb(254,255,216);
-  background: linear-gradient(90deg, rgba(254,255,216,1) 0%, rgba(255,255,255,1) 20%, rgba(255,255,255,1) 80%, rgba(254,255,216,1) 100%);
+  background: rgb(254, 255, 216);
+  background: linear-gradient(90deg, rgba(254, 255, 216, 1) 0%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 1) 80%, rgba(254, 255, 216, 1) 100%);
 }
 
 header {
   color: black;
-  background: rgb(192,255,168);
-  background: rgb(254,255,216);
-  background: linear-gradient(90deg, rgba(254,255,216,1) 0%, rgba(255,255,255,1) 20%, rgba(255,255,255,1) 80%, rgba(254,255,216,1) 100%);
+  background: rgb(192, 255, 168);
+  background: rgb(254, 255, 216);
+  background: linear-gradient(90deg, rgba(254, 255, 216, 1) 0%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 1) 80%, rgba(254, 255, 216, 1) 100%);
 }
 
 .caixa {
@@ -49,7 +49,6 @@ header {
 nav {
   position: absolute;
   top: 20px;
-  right: 0;
 }
 
 nav li {
@@ -83,16 +82,21 @@ nav a:hover {
 }
 
 h1 {
-  opacity: 0; /* Inicialmente invisível */
-  transform: translateY(-50px); /* Posição inicial acima */
-  animation: titleEntrance 1s forwards; /* Animação de entrada */
+  opacity: 0;
+  /* Inicialmente invisível */
+  transform: translateY(-50px);
+  /* Posição inicial acima */
+  animation: titleEntrance 1s forwards;
+  /* Animação de entrada */
 }
 
 /* Animação de entrada */
 @keyframes titleEntrance {
   to {
-    opacity: 1; /* Torna o título visível */
-    transform: translateY(0); /* Retorna à posição original */
+    opacity: 1;
+    /* Torna o título visível */
+    transform: translateY(0);
+    /* Retorna à posição original */
   }
 }
 
@@ -101,7 +105,7 @@ h1 {
 }
 
 p {
-    padding: 20px;
+  padding: 20px;
 }
 
 .apresentacao p {
@@ -120,26 +124,29 @@ p {
 }
 
 @keyframes flutuar {
-  0%{
-    top:0;
+  0% {
+    top: 0;
   }
-  100%{
-    top:30px;
+
+  100% {
+    top: 30px;
   }
 }
 
-figcaption{
+figcaption {
   font-size: 15px;
   text-align: center;
 }
 
 .apresentacao {
-    font-size: 20px;
-    padding: 100px;
-    display: flex;
-    align-items: center; /* Alinhar verticalmente */
-    gap: 40px; /* Espaçamento entre texto e imagem */
-    font-family:"Chakra Petch", sans-serif;
+  font-size: 20px;
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  /* Alinhar verticalmente */
+  gap: 40px;
+  /* Espaçamento entre texto e imagem */
+  font-family: "Chakra Petch", sans-serif;
 }
 
 .rodape {
@@ -155,4 +162,112 @@ figcaption{
   font-size: 13px;
   margin: 20px 0 0;
   padding: 10px;
+}
+
+@media screen and (max-width: 1020px) {
+
+  /* CAÇALHO */
+  .caixa {
+    display: none;
+  }
+
+  /* TITULO PRINCIPAL*/
+  .titulo-principal {
+    font-size: 18px;
+  }
+
+  /* APRESENTAÇÃO */
+  .apresentacao {
+    flex-direction: column;
+  }
+
+  /* TEXTO */
+  .apresentacao p {
+    padding: 20px 0%;
+  }
+
+  /* IMAGEM */
+  .img-inicio {
+    width: 300px;
+  }
+
+  /* MENU */
+  .caixa {
+    display: none;
+  }
+
+  .caixa-mobile.abrir {
+    visibility: visible;
+    height: 100vh;
+  }
+
+  #botao-menu {
+    display: block;
+  }
+
+}
+
+/* ESTILIZAÇÃO DO MENU-MOBILE */
+.caixa-mobile {
+  background-color: rgba(0, 53, 0, 0.711);
+  backdrop-filter: blur(10px);
+  position: absolute;
+  top: 90px;
+  left: 0px;
+  width: 100%;
+  height: 0;
+  z-index: 10;
+  visibility: hidden;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.caixa-mobile nav a {
+  color: white;
+  display: block;
+  padding: 20px 30px;
+  width: 100%;
+}
+
+.caixa-mobile nav a:hover {
+  background-color: rgb(134, 134, 0);
+}
+
+#botao-menu {
+  background: transparent;
+  width: 90px;
+  height: 90px;
+  outline: none;
+  cursor: pointer;
+  border: 4px solid #ccc;
+  transition: 0.2s;
+}
+
+.linha {
+  position: relative;
+  width: 60px;
+  height: 5px;
+  background-color: #ccc;
+  display: block;
+  margin: 5px auto;
+  transform-origin: center;
+  transition: 0.2s;
+}
+
+#botao-menu.ativar {
+  border:2px solid red ;
+}
+
+#botao-menu.ativar .linha:nth-child(1){
+  transform: translateY(8px) rotate(-45deg);
+  background-color: red;
+}
+
+#botao-menu.ativar .linha:nth-child(3){
+  transform: translateY(-8px) rotate(45deg);
+  background-color: red;
+}
+
+#botao-menu.ativar .linha:nth-child(2){
+width: 0;
 }
