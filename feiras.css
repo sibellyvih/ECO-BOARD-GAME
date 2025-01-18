@@ -146,7 +146,7 @@ iframe {
 }
 
 .imagens-premiacao {
-    max-width: 350px;
+    width: 350px;
     height: auto;
 }
 
@@ -168,4 +168,42 @@ figcaption{
   font-size: 13px;
   margin: 20px 0 0;
   padding: 10px;
+}
+
+@media screen and (max-width: 1020px) {
+  
+  /* TITULO PRINCIPAL*/
+  .titulo-principal {
+    font-size: 18px;
+  }
+
+ /* SEGUNDO TÍTULO */
+ h2{
+  font-size: 18px;
+ }
+
+ /* AJUSNTANDO AS COLUNAS */
+ .imagens-container {
+  flex-direction: column;
+ }
+
+ iframe {
+  width: 310px;
+  height: 200px;
+ }
+
+ /* IMAGENS */
+ .imagens-premiacao {
+  width: 100%;
+ }
+
+ .logo-fenaahs {
+  width: 100%;
+ }
+
+ .logo-ficiencias {
+  width: 80%;
+  padding: 20px;
+ }
+
 }
