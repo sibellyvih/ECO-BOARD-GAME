@@ -173,8 +173,8 @@ figcaption{
 @media screen and (max-width: 1020px) {
   
   /* TITULO PRINCIPAL*/
-  .titulo-principal {
-    font-size: 18px;
+  .titulo-principal h1{
+    font-size: 25px;
   }
 
  /* SEGUNDO TÍTULO */

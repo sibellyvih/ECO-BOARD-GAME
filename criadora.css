@@ -172,8 +172,8 @@ figcaption {
   }
 
   /* TITULO PRINCIPAL*/
-  .titulo-principal {
-    font-size: 18px;
+  .titulo-principal h1{
+    font-size: 25px;
   }
 
   /* APRESENTAÇÃO */

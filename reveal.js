@@ -25,28 +25,34 @@ revelar.reveal('.titulo',
 // SESSÃO DAS IMAGENS
 revelar.reveal('.efeito-na-imagem1',
     {
-        duration: 2000,
-        distance: '90px',
-        delay: 500
+        duration: 1000,
+        distance: '90px'
 })
 
 revelar.reveal('.efeito-na-imagem2',
     {
-        duration: 2000,
+        duration: 1000,
         distance: '90px',
-        delay: 1000
+        delay: 500
 })
 
 revelar.reveal('.efeito-na-imagem3',
     {
-        duration: 2000,
+        duration: 1000,
         distance: '90px',
-        delay: 1500
+        delay: 1000
 })
 
 revelar.reveal('.efeito-na-imagem4',
     {
-        duration: 2000,
+        duration: 1000,
+        distance: '90px',
+        delay: 1500
+})
+
+revelar.reveal('.efeito-na-imagem5',
+    {
+        duration: 1000,
         distance: '90px',
         delay: 2000
 })
