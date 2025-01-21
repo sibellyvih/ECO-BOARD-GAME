@@ -24,7 +24,34 @@
               </ul>
             </nav>
           </div>
+
+          <button onclick="animarMenu()" id="botao-menu">
+            <span class="linha"></span>
+            <span class="linha"></span>
+            <span class="linha"></span>
+          </button>
+      
+          <script>
+            function animarMenu(){
+              const btn = document.getElementById('botao-menu')
+              btn.classList.toggle('ativar')
+            }
+          </script>
+      
+          <div class="caixa-mobile" id="caixa-mobile">
+            <nav>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="game.html">Jogo</a></li>
+                <li><a href="workshop.html">Workshop</a></li>
+                <li><a href="feiras.html">Feiras</a></li>
+                <li><a href="criadora.html">Criadora</a></li>
+              </ul>
+            </nav>
+          </div>
         </header>
+      
+        <script src="animar.js"></script>
 
         <div class="titulo-principal">
             <h1>Feiras em que o ECO BOARD GAME participou:</h1>

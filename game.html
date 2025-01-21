@@ -23,7 +23,34 @@
                 </ul>
               </nav>
           </div>
-          </header>
+
+          <button onclick="animarMenu()" id="botao-menu">
+            <span class="linha"></span>
+            <span class="linha"></span>
+            <span class="linha"></span>
+          </button>
+      
+          <script>
+            function animarMenu(){
+              const btn = document.getElementById('botao-menu')
+              btn.classList.toggle('ativar')
+            }
+          </script>
+      
+          <div class="caixa-mobile" id="caixa-mobile">
+            <nav>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="game.html">Jogo</a></li>
+                <li><a href="workshop.html">Workshop</a></li>
+                <li><a href="feiras.html">Feiras</a></li>
+                <li><a href="criadora.html">Criadora</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+      
+        <script src="animar.js"></script>
 
         <div class="titulo-principal">
           <h1>Eco Board Game</h1>
@@ -46,7 +73,7 @@
             <h3>2° PASSO</h3>
             <li>Clique no botão para continuar.</li>
             <figure>
-              <img src="Tela inicial.png" alt="Foto da tela inicial do jogo">
+              <img class="img-instrucao" src="Tela inicial.png" alt="Foto da tela inicial do jogo">
             </figure>
             <hr>
           </div>
@@ -55,7 +82,7 @@
             <h3>3° PASSO</h3> 
             <li>Tio Green irá explicar o que é o ECO BOARD GAME. Para continuar, clique na seta para prosseguir.</li>
             <figure>
-              <img src="Fala do Tio Green.png" alt="Foto do Tio Green explicando sobre o jogo">
+              <img class="img-instrucao" src="Fala do Tio Green.png" alt="Foto do Tio Green explicando sobre o jogo">
             </figure>
             <hr>
           </div>
@@ -64,10 +91,10 @@
             <h3>4° PASSO</h3>
             <li>Aparecendo o menu inicial, você pode acessar as dicas disponíveis para os jogadores.</li>
             <figure>
-              <img src="Menu.png" alt="Foto do menu inicial">
+              <img class="img-instrucao" src="Menu.png" alt="Foto do menu inicial">
             </figure>
             <figure>
-              <img src="Tabela de dica.png" alt="Foto da tabela de dicas">
+              <img class="img-instrucao" src="Tabela de dica.png" alt="Foto da tabela de dicas">
             </figure>
             <hr>
           </div>
@@ -76,7 +103,7 @@
             <h3>5° PASSO</h3> 
            <li>Após acessar as dicas e estiver tudo pronto, clique em PLAY para iniciar a partida. Assim, escolha o modo de jogo, CONTRA O COMPUTADOR ou CONTRA AMIGOS. Se escolher a opção "jogar contra amigos", escolha a quantidade de jogadores de no máximo 5 jogadores.</li>
             <figure>
-              <img src="pc ou amigos.png" alt="Foto do Tio Green falando as regras">
+              <img class="img-instrucao" src="pc ou amigos.png" alt="Foto do Tio Green falando as regras">
             </figure>
             <hr>
           </div>
@@ -85,7 +112,7 @@
             <h3>6° PASSO</h3>
             <li>Digite o nome dos jogadores.</li>
             <figure>
-              <img src="Nome.png" alt="Foto do Tio Green falando as regras">
+              <img class="img-instrucao" src="Nome.png" alt="Foto do nomeamento do peão">
             </figure>
             <hr>
           </div>
@@ -93,7 +120,7 @@
             <h3>7° PASSO</h3>
             <li>Após a contegem regressiva, clique para rodar os dados. Quem chegar ao final primeiro vencerá a partida.</li>
             <figure>
-              <img src="Vencedor.jpg" alt="Foto do cenário do vencedor">
+              <img class="img-instrucao" src="Vencedor.jpg" alt="Foto do cenário do vencedor">
             </figure>
             <hr>
           </div>
@@ -102,7 +129,7 @@
 
           <main>
             <h2 class="titulo">Tabuleiro na versão simplificada para o jogo digital</h2>
-            <img class="aparecer" src="Jogo de tabuleiro da sustentabilidade.png" alt="Tabuleiro do jogo">
+            <img class="aparece" src="Jogo de tabuleiro da sustentabilidade.png" alt="Tabuleiro do jogo">
             <figcaption>Imagem do tabuleiro do jogo. Fonte: Autoral.</figcaption>
             <h2 class="titulo">Jogue o jogo incorporado abaixo</h2>         
             <a class="aparecer"><iframe  class="jogo" src="https://scratch.mit.edu/projects/1003124883/embed" allowtransparency="true" width="800" height="490" frameborder="0" scrolling="no" allowfullscreen></iframe></a>

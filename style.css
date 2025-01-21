@@ -1,38 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
 
 :root {
-  --cor-de-fundo-titulo-principal:  #F4D03F; 
+  --cor-de-fundo-titulo-principal: #F4D03F;
   --background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
   --verde-claro: rgb(0, 255, 0);
   --branco: white;
   --preto: black;
   --botao-ativo: rgb(0, 88, 0);
-  --botao-inativo:rgb(0, 51, 0);
+  --botao-inativo: rgb(0, 51, 0);
   --texto-fundo: rgb(0, 28, 0);
 }
 
-html, body {
+html,
+body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
   color: var(--preto);
-  background: rgb(254,255,216);
-  background: linear-gradient(90deg, rgba(254,255,216,1) 0%, rgba(255,255,255,1) 20%, rgba(255,255,255,1) 80%, rgba(254,255,216,1) 100%);
+  background: rgb(254, 255, 216);
+  background: linear-gradient(90deg, rgba(254, 255, 216, 1) 0%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 1) 80%, rgba(254, 255, 216, 1) 100%);
 }
 
 header {
   color: black;
-  background: rgb(254,255,216);
-  background: linear-gradient(90deg, rgba(254,255,216,1) 0%, rgba(255,255,255,1) 20%, rgba(255,255,255,1) 80%, rgba(254,255,216,1) 100%);
+  background: rgb(254, 255, 216);
+  background: linear-gradient(90deg, rgba(254, 255, 216, 1) 0%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 1) 80%, rgba(254, 255, 216, 1) 100%);
   padding: 10px 0px;
 }
 
 .caixa {
   position: relative;
   margin: 0 auto;
-  flex-wrap: wrap;
 }
 
 .caixa h1 {
@@ -69,16 +69,21 @@ nav a:hover {
 }
 
 h1 {
-  opacity: 0; /* Inicialmente invisível */
-  transform: translateY(-50px); /* Posição inicial acima */
-  animation: titleEntrance 1s forwards; /* Animação de entrada */
+  opacity: 0;
+  /* Inicialmente invisível */
+  transform: translateY(-50px);
+  /* Posição inicial acima */
+  animation: titleEntrance 1s forwards;
+  /* Animação de entrada */
 }
 
 /* Animação de entrada */
 @keyframes titleEntrance {
   to {
-    opacity: 1; /* Torna o título visível */
-    transform: translateY(0); /* Retorna à posição original */
+    opacity: 1;
+    /* Torna o título visível */
+    transform: translateY(0);
+    /* Retorna à posição original */
   }
 }
 
@@ -120,7 +125,14 @@ h2 {
   font-size: 14px;
 }
 
-.titulo, .efeito-no-conteudo, .efeito-na-imagem1, .efeito-na-imagem2, .efeito-na-imagem3, .efeito-na-imagem4, .esquerda, .direita {
+.titulo,
+.efeito-no-conteudo,
+.efeito-na-imagem1,
+.efeito-na-imagem2,
+.efeito-na-imagem3,
+.efeito-na-imagem4,
+.esquerda,
+.direita {
   visibility: hidden;
 }
 
@@ -129,7 +141,7 @@ h2 {
   text-align: center;
 }
 
-.Introducao li{
+.Introducao li {
   font-size: 20px;
   padding: 15px;
   font-family: "Chakra Petch", sans-serif;
@@ -140,14 +152,19 @@ h2 {
 }
 
 .gifs {
-  display: flex; /* Coloca os GIFs na mesma linha */
-  justify-content: center; /* Alinha os GIFs ao centro */
-  gap: 10px; /* Espaço entre os GIFs */
+  display: flex;
+  /* Coloca os GIFs na mesma linha */
+  justify-content: center;
+  /* Alinha os GIFs ao centro */
+  gap: 10px;
+  /* Espaço entre os GIFs */
 }
 
 .gif {
-  margin: 0 5px; /* Espaço entre os GIFs */
-  height: auto; /* Mantém a proporção */
+  margin: 0 5px;
+  /* Espaço entre os GIFs */
+  height: auto;
+  /* Mantém a proporção */
 }
 
 .R {
@@ -156,7 +173,7 @@ h2 {
   font-family: "Chakra Petch", sans-serif;
 }
 
-.R p{
+.R p {
   font-size: 18px;
 }
 
@@ -168,19 +185,20 @@ h2 {
 .botao {
   font-size: 20px;
   font-family: "Chakra Petch", sans-serif;
-  background-image: linear-gradient(to right, #348F50 0%, #56d3a5  51%, #348F50  100%);
+  background-image: linear-gradient(to right, #348F50 0%, #56d3a5 51%, #348F50 100%);
   margin: 10px;
   padding: 5px 5px;
   transition: 0.5s;
   background-size: 200% auto;
-  color: black;            
+  color: black;
   box-shadow: 0 0 10px #eee;
   border-radius: 10px;
   border: white;
 }
 
 .botao:hover {
-  background-position: right center; /* change the direction of the change here */
+  background-position: right center;
+  /* change the direction of the change here */
   color: black;
   text-decoration: none;
 }
@@ -188,7 +206,7 @@ h2 {
 img {
   max-width: 400px;
   max-height: 350px;
-  margin: auto; 
+  margin: auto;
 }
 
 .agenda2030 {
@@ -240,7 +258,7 @@ img {
 }
 
 .botao-agenda.ativo {
-  background-color: var(--botao-ativo );
+  background-color: var(--botao-ativo);
   border-bottom: 4px solid var(--verde-claro);
 }
 
@@ -271,9 +289,9 @@ img {
 }
 
 .contador {
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .contador-digito {
@@ -293,30 +311,32 @@ flex-wrap: wrap;
 }
 
 @media screen and (min-width: 768px) {
-.botoes-agenda {
+  .botoes-agenda {
     display: flex;
   }
-.botao-agenda:first-child {
-  border-radius: 40px 0 0 0;
-}
-.botao-agenda:last-child {
-  border-radius: 0 40px 0 0;
-}
+
+  .botao-agenda:first-child {
+    border-radius: 40px 0 0 0;
+  }
+
+  .botao-agenda:last-child {
+    border-radius: 0 40px 0 0;
+  }
 }
 
 .Objetivos {
- padding: 50px;
+  padding: 50px;
 }
 
 .Objetivos li {
-font-size: 22px;
-font-family: "Chakra Petch", sans-serif;
+  font-size: 22px;
+  font-family: "Chakra Petch", sans-serif;
 }
 
 .Objetivos p {
   font-size: 22px;
   text-align: center;
-  }
+}
 
 .Metodologia {
   width: 100%;
@@ -330,14 +350,19 @@ font-family: "Chakra Petch", sans-serif;
 
 .img-metodologia {
   max-width: 300px;
-  margin-right: 20px; /* Espaço entre a imagem e a lista */
+  margin-right: 20px;
+  /* Espaço entre a imagem e a lista */
 }
 
 .conteudo-metodologia {
-  display: flex; /* Flexbox aplicado aqui para alinhar conteúdo */
-  justify-content: space-between; /* Espaço entre a lista e a imagem */
-  align-items: flex-start; /* Alinhamento no topo */
-  margin-bottom: 30px; /* Espaçamento entre blocos de conteúdo */
+  display: flex;
+  /* Flexbox aplicado aqui para alinhar conteúdo */
+  justify-content: space-between;
+  /* Espaço entre a lista e a imagem */
+  align-items: flex-start;
+  /* Alinhamento no topo */
+  margin-bottom: 30px;
+  /* Espaçamento entre blocos de conteúdo */
   padding: 20px;
 }
 
@@ -349,7 +374,8 @@ hr {
 }
 
 .Metodologia ul {
-  text-align: left; /* Alinhar o texto da lista à esquerda */
+  text-align: left;
+  /* Alinhar o texto da lista à esquerda */
   padding: 0;
   margin: 0;
   list-style: none;
@@ -360,17 +386,22 @@ hr {
   margin-bottom: 10px;
 }
 
-.jogo-fisico, .jogo-digital, .site {
+.jogo-fisico,
+.jogo-digital,
+.site {
   display: flex;
-  flex-direction: row; /* Garantir que a imagem e o texto fiquem lado a lado */
+  flex-direction: row;
+  /* Garantir que a imagem e o texto fiquem lado a lado */
   justify-content: center;
   align-items: flex-start;
-  width: 100%; /* Garantir que o conteúdo use toda a largura disponível */
+  width: 100%;
+  /* Garantir que o conteúdo use toda a largura disponível */
 }
 
 .Resultados {
   padding: 60px 0;
-  width: 100%; /* A largura da div se ajustará ao tamanho da tela */
+  width: 100%;
+  /* A largura da div se ajustará ao tamanho da tela */
   font-family: "Chakra Petch", sans-serif;
 }
 
@@ -394,15 +425,20 @@ hr {
 .estatisticas {
   font-size: 20px;
   display: flex;
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center;    /* Centraliza verticalmente */
-  height: 40vh;          /* Opcional, ajusta a altura da div */
+  justify-content: center;
+  /* Centraliza horizontalmente */
+  align-items: center;
+  /* Centraliza verticalmente */
+  height: 40vh;
+  /* Opcional, ajusta a altura da div */
   padding: 0px;
 }
 
 #meuGrafico {
-  max-width: 350px;   /* Largura do gráfico */
-  max-height: 250px;  /* Altura do gráfico */
+  max-width: 350px;
+  /* Largura do gráfico */
+  max-height: 250px;
+  /* Altura do gráfico */
 }
 
 .imagens-conclusão img {
@@ -420,14 +456,16 @@ hr {
 .content {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Alinhar verticalmente */
-  gap: 0px; /* Espaçamento entre texto e imagem */
+  align-items: center;
+  /* Alinhar verticalmente */
+  gap: 0px;
+  /* Espaçamento entre texto e imagem */
   padding: 0px;
 }
 
 blockquote {
   padding: 0px;
-  }
+}
 
 .carousel-container {
   position: relative;
@@ -435,7 +473,7 @@ blockquote {
   margin: auto;
   text-align: center;
 }
-  
+
 .carousel-controls {
   position: absolute;
   top: 50%;
@@ -446,91 +484,99 @@ blockquote {
   transform: translateY(-50%);
   user-select: none;
 }
-  
-  .carousel-controls.left {
-    left: 0px;
-    padding: 0px 0px;
-  }
-  
-  .carousel-controls.right {
-    right: 0px;
-    padding: 0px 0px;
-  }
-  
-  blockquote {
-    display: none;
-    text-align: center;
-  }
-  
-  blockquote.active {
-    display: block;
-  }
-  
-  .content img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  figcaption {
-    font-style: italic;
-    font-family: "Chakra Petch", sans-serif;
-    margin-top: 8px;
-    font-size: 16px;
-    text-align: center;
-  }
 
-  .conclusao {
-    padding: 50px;
-    font-family: "Chakra Petch", sans-serif;
-  }  
+.carousel-controls.left {
+  left: 0px;
+  padding: 0px 0px;
+}
 
-  .acessar-jogo {
-    background-image:url(Fundo\ Jogo.jpg);
-    background-size: cover; /* Ajusta a imagem para cobrir toda a div */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Evita a repetição da imagem */
-    color: white; /* Define a cor do texto */
-    text-align: center; /* Centraliza o texto */
-    padding: 10px; /* Adiciona espaço ao redor do texto */
-    height: 800px; /* Define a altura da div */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    font-family: "Merriweather", serif;
-    font-weight: 600;
-    font-style: normal;
-  }
+.carousel-controls.right {
+  right: 0px;
+  padding: 0px 0px;
+}
 
- .acessar-jogo ul {
-    font-size: 25px;
-    color: white;
-    padding-top: 400px;
- }
+blockquote {
+  display: none;
+  text-align: center;
+}
 
- .acessar-jogo h2 {
+blockquote.active {
+  display: block;
+}
+
+.content img {
+  max-width: 100%;
+  height: auto;
+}
+
+figcaption {
+  font-style: italic;
+  font-family: "Chakra Petch", sans-serif;
+  margin-top: 8px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.conclusao {
+  padding: 50px;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.acessar-jogo {
+  background-image: url(Fundo\ Jogo.jpg);
+  background-size: cover;
+  /* Ajusta a imagem para cobrir toda a div */
+  background-position: center;
+  /* Centraliza a imagem */
+  background-repeat: no-repeat;
+  /* Evita a repetição da imagem */
+  color: white;
+  /* Define a cor do texto */
+  text-align: center;
+  /* Centraliza o texto */
+  padding: 10px;
+  /* Adiciona espaço ao redor do texto */
+  height: 800px;
+  /* Define a altura da div */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Merriweather", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.acessar-jogo ul {
+  font-size: 25px;
+  color: white;
+  padding-top: 400px;
+}
+
+.acessar-jogo h2 {
   font-size: 50px;
   font-family: "Merriweather", serif;
- }
+}
 
- .acessar-jogo a {
+.acessar-jogo a {
   color: var(--verde-claro);
- }
+}
 
- .qr-code {
+.qr-code {
   background-color: #306034;
   background-image: linear-gradient(0deg, #306034 3%, #73f576 50%, #68ebf5 100%);
   text-align: center;
   color: black;
-  height: 450px; /* Define a altura da div */
+  height: 450px;
+  /* Define a altura da div */
   padding: 10px;
- }
- 
- .img-qr-code{
+}
+
+.img-qr-code {
   max-width: 250px;
   max-height: 400px;
- }
+}
 
 .rodape {
   font-size: 18px;
@@ -547,43 +593,153 @@ blockquote {
   padding: 10px;
 }
 
-@media screen and (max-width: 1020px) {
- /* DEIXANDO EM COLUNAS */
-.gifs, .jogo-fisico, .jogo-digital, .site, .estatisticas {
-  flex-direction: column;
+/* ESTILIZAÇÃO DO MENU-MOBILE */
+.caixa-mobile {
+  background-color: rgba(0, 53, 0, 0.711);
+  backdrop-filter: blur(10px);
+  position: absolute;
+  top: 70px;
+  left: 0px;
+  width: 100%;
+  height: 0;
+  z-index: 10;
+  visibility: hidden;
+  transition: 0.5s;
+  overflow: hidden;
 }
 
-  /* TITULO PRINCIPAL*/
-  .titulo-principal h1{
-    font-size: 25px;
-    padding-bottom: 80px;
+.caixa-mobile nav a {
+  color: white;
+  display: block;
+  padding: 20px 30px;
+  width: 100%;
+}
+
+.caixa-mobile nav a:hover {
+  background-color: rgb(134, 134, 0);
+}
+
+#botao-menu {
+  background: transparent;
+  width: 50px;
+  height: 50px;
+  outline: none;
+  cursor: pointer;
+  border: 5px solid var(--botao-inativo);
+  border-radius: 2px;
+  transition: 0.2s;
+  display: none;
+}
+
+
+.linha {
+  position: relative;
+  width: 20px;
+  height: 3px;
+  background-color: var(--botao-inativo);
+  display: block;
+  margin: 5px auto;
+  transform-origin: center;
+  transition: 0.2s;
+}
+
+#botao-menu.ativar {
+  border: 5px solid red;
+}
+
+#botao-menu.ativar .linha:nth-child(1) {
+  transform: translateY(8px) rotate(-45deg);
+  background-color: red;
+}
+
+#botao-menu.ativar .linha:nth-child(3) {
+  transform: translateY(-8px) rotate(45deg);
+  background-color: red;
+}
+
+#botao-menu.ativar .linha:nth-child(2) {
+  width: 0;
+}
+
+@media screen and (max-width: 1020px) {
+
+  /* DEIXANDO EM COLUNAS */
+  .gifs,
+  .jogo-fisico,
+  .jogo-digital,
+  .site,
+  .estatisticas {
+    flex-direction: column;
   }
 
- /* SEGUNDO TÍTULO */
+  /* TITULO PRINCIPAL*/
+  .titulo-principal h1 {
+    font-size: 25px;
+    padding-bottom: 50px;
+    padding-top: 90px;
+  }
 
- .apresentacao h2 {
-  text-align: right;
-  padding-right: 20px;
-  font-size: 20px;
-  padding: 1px;
-}
+  /* SEGUNDO TÍTULO */
 
- .local {
-  padding-top: 60px;
-  padding-bottom: 115px;
-  font-size: 17px;
-}
+  .apresentacao h2 {
+    text-align: right;
+    padding-right: 20px;
+    font-size: 18px;
+    padding: 1px;
+  }
 
- /* IMAGENS */
- .Introducao img {
-  width: 100%;
-  height: 100%;
- }
+  .local {
+    padding-top: 60px;
+    padding-bottom: 100px;
+    font-size: 15px;
+  }
 
- /* ESTATISTICAS */
- .estatisticas {
-  font-size: 20px;
-  height: 70vh; /* Opcional, ajusta a altura da div */
-}
+  /* IMAGENS */
+  .Introducao img {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* ESTATISTICAS */
+  .estatisticas {
+    font-size: 20px;
+    height: 70vh;
+    /* Opcional, ajusta a altura da div */
+  }
+
+  /* ACESSAR JOGO */
+  .acessar-jogo {
+    height: 800px;
+    /* Define a altura da div */
+    font-family: "Chakra Petch", sans-serif;
+  }
+
+  .acessar-jogo h2 {
+    font-size: 40px;
+  }
+
+  .acessar-jogo li {
+    font-size: 20px;
+  }
+
+  /* MENU */
+  .caixa {
+    display: none;
+  }
+
+  .caixa-mobile.abrir {
+    visibility: visible;
+    height: calc(100vh - 50px);
+  }
+
+  #botao-menu {
+    display: block;
+  }
+
+  .caixa-mobile nav {
+    position: absolute;
+    top: 20px;
+    left: 0;
+  }
 
 }
