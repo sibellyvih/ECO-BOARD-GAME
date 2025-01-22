@@ -79,6 +79,7 @@ nav a:hover {
   font-weight: 400;
   font-style: normal;
   padding: 5px;
+  text-shadow: #FC0 1px 0 10px;
 }
 
 h1 {
@@ -245,6 +246,14 @@ width: 0;
     .titulo-principal h1{
       font-size: 25px;
     }
+
+    h2 {
+      font-size: 20px;
+    }
+
+    .instrucoes li {
+      font-size: 16px;
+    }
   
     /* MENU */
     .caixa {
@@ -289,6 +298,10 @@ width: 0;
 
     main img {
       width: 80%;
+    }
+
+    main p {
+      font-size: 18px;
     }
 
   }
