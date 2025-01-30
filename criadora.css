@@ -106,13 +106,10 @@ h1 {
   visibility: hidden;
 }
 
-p {
-  padding: 20px;
-}
-
 .apresentacao p {
-  padding: 20px;
+  padding: 0px 30px;
   text-align: justify;
+  text-indent: 1em;
 }
 
 .img-inicio {
@@ -142,12 +139,10 @@ figcaption {
 
 .apresentacao {
   font-size: 20px;
-  padding: 100px;
+  padding: 100px 0px;
   display: flex;
   align-items: center;
   /* Alinhar verticalmente */
-  gap: 40px;
-  /* Espaçamento entre texto e imagem */
   font-family: "Chakra Petch", sans-serif;
 }
 
@@ -204,7 +199,6 @@ figcaption {
   display: none;
 }
 
-
 .linha {
   position: relative;
   width: 20px;
@@ -253,12 +247,17 @@ width: 0;
 
   /* TEXTO */
   .apresentacao p {
-    padding: 20px 0%;
+   padding: 10px 50px;
+   font-size: 18px;
   }
 
   /* IMAGEM */
   .img-inicio {
-    width: 300px;
+    width: 80%;
+  }
+
+  .esquerda {
+    text-align: center;
   }
 
   /* MENU */
