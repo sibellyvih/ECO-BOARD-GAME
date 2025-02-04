@@ -634,7 +634,6 @@ figcaption {
   display: none;
 }
 
-
 .linha {
   position: relative;
   width: 20px;
@@ -715,6 +714,32 @@ figcaption {
 
   figcaption {
     font-size: 14px;
+  }
+
+  /*AGENDA 2030*/
+  .titulo-agenda {
+    font-size: 25px;
+  }
+
+  .botao-agenda {
+    font-size: 18px;
+    width: 100%;
+  }
+
+  .aba-couteudo-titulo-principal {
+    font-size: 22px;
+  }
+
+  .aba-couteudo-titulo-secundario {
+    font-size: 20px;
+  }
+
+  .contador-digito-numero {
+    font-size: 50px;
+  }
+
+  .contador-digito-texto {
+    font-size: 16px;
   }
 
   /* ESTATISTICAS */
