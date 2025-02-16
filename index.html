@@ -7,9 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="recet.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="slide.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="reveal.js" defer></script>
+  <script src="slide.js" defer></script>
   <title>Projeto Eco Board Game</title>
 </head>
 
@@ -34,7 +36,7 @@
     </button>
 
     <script>
-      function animarMenu(){
+      function animarMenu() {
         const btn = document.getElementById('botao-menu')
         btn.classList.toggle('ativar')
       }
@@ -69,14 +71,47 @@
     </div>
   </section>
 
+  <section class="slider">
+    <div class="slider-content">
+
+      <input type="radio" name="btn-radio" id="radio1">
+      <input type="radio" name="btn-radio" id="radio2">
+      <input type="radio" name="btn-radio" id="radio3">
+
+      <div class="slide-box primeiro">
+        <img class="img-desktop" src="Slide 1 pc.png" alt="slide 1">
+        <img class="img-mobile" src="Slide 1 mobile.png" alt="slide 1">
+      </div>
+
+      <div class="slide-box">
+        <img class="img-desktop" src="Slide 2 pc.png" alt="slide 2">
+        <img class="img-mobile" src="Slide 2 mobile.png" alt="slide 2">
+      </div>
+
+      <div class="slide-box">
+        <img class="img-desktop" src="Slide 3 pc.png" alt="slide 3">
+        <img class="img-mobile" src="Slide 3 mobile.png" alt="slide 3">
+      </div>
+
+      <div class="nav-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+      </div>
+
+      <div class="nav-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+      </div>
+
+    </div>
+  </section>
+
   <section class="Introducao">
-    <h2 class="titulo">Introdução ao ECO BOARD GAME</h2>
-    <h3 class="titulo texto-verde">Combina um jogo de tabuleiro educativo com tecnologia para promover a conscientização
-      ambiental.</h3>
 
     <ul class="efeito-no-conteudo">
-      <li>O <strong>desenvolvimento sustentável</strong> é um assunto de grande magnitude e relevância no mundo
-        contemporâneo, e cada vez mais, se faz fundamental para a conscientização e formação da população mundial.</li>
+      
       <figure class="efeito-na-imagem1">
         <img src="Gif.gif" alt="Gif da sustentabilidade">
         <figcaption>Fonte: Gifer.</figcaption>
@@ -104,7 +139,8 @@
           <figcaption>Representação do aquecimento global. Fonte: Gifer.</figcaption>
         </figure>
         <figure class="efeito-na-imagem2">
-          <img class="gif" src="Alteração climática.gif" alt="gif representando a alteração climática ocorrida nos polos">
+          <img class="gif" src="Alteração climática.gif"
+            alt="gif representando a alteração climática ocorrida nos polos">
           <figcaption>Alteração climática ocorrida nas geleiras. Fonte: Gifer.</figcaption>
         </figure>
       </div>
@@ -182,28 +218,29 @@
 
   <section class="Introducao">
     <ul>
-    <li><strong>Ações educacionais</strong> formam cidadãos responsáveis e preocupados com questões ambientais e de
-      sustentabilidade. Dessa maneira, o ECO BOARD GAME realizou <em>workshops</em> em escolas para alunos do Ensino
-      Fundamental I e II e Ensino Médio.</li>
-    <figure class="efeito-na-imagem1">
-      <img src="Gif da apresentação.gif" alt="Gif da apresentação dos projetos nas escolas.">
-      <figcaption>Apresentação do projeto na escola. Fonte: Autoral.</figcaption>
-    </figure>
+      <li><strong>Ações educacionais</strong> formam cidadãos responsáveis e preocupados com questões ambientais e de
+        sustentabilidade. Dessa maneira, o ECO BOARD GAME realizou <em>workshops</em> em escolas para alunos do Ensino
+        Fundamental I e II e Ensino Médio.</li>
+      <figure class="efeito-na-imagem1">
+        <img src="Gif da apresentação.gif" alt="Gif da apresentação dos projetos nas escolas.">
+        <figcaption>Apresentação do projeto na escola. Fonte: Autoral.</figcaption>
+      </figure>
 
-    <li>Graças a massificação das <strong>tecnologias digitais de informação e comunicação (TDIC)</strong>, as barreiras
-      temporais e mesmo as espaciais começaram a ser eliminadas, estabelecendo práticas pedagógicas diferenciadas e
-      metodologias inovadoras.</li>
-    <figure class="efeito-na-imagem1">
-      <img src="TDIC.gif" alt="Exemplo da TDIC">
-      <figcaption>Avanço das TDICs. Fonte: Gifer.</figcaption>
-    </figure>
+      <li>Graças a massificação das <strong>tecnologias digitais de informação e comunicação (TDIC)</strong>, as
+        barreiras
+        temporais e mesmo as espaciais começaram a ser eliminadas, estabelecendo práticas pedagógicas diferenciadas e
+        metodologias inovadoras.</li>
+      <figure class="efeito-na-imagem1">
+        <img src="TDIC.gif" alt="Exemplo da TDIC">
+        <figcaption>Avanço das TDICs. Fonte: Gifer.</figcaption>
+      </figure>
 
-    <li>O <strong>Jogo digital</strong> desenvolvido no Scratch é utilizado como objeto de aprendizagem.</li>
-    <figure class="efeito-na-imagem1">
-      <img src="Gif Scratch.gif" alt="Programação do jogo de tabuleiro digital no Scratch">
-      <figcaption>Programação do jogo de tabuleiro digital no Scratch. Fonte: Autoral.</figcaption>
-    </figure>
-  </ul>
+      <li>O <strong>Jogo digital</strong> desenvolvido no Scratch é utilizado como objeto de aprendizagem.</li>
+      <figure class="efeito-na-imagem1">
+        <img src="Gif Scratch.gif" alt="Programação do jogo de tabuleiro digital no Scratch">
+        <figcaption>Programação do jogo de tabuleiro digital no Scratch. Fonte: Autoral.</figcaption>
+      </figure>
+    </ul>
   </section>
 
   <section class="Objetivos">

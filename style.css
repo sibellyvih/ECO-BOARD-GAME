@@ -145,8 +145,14 @@ h2 {
 
 .Introducao li {
   font-size: 20px;
-  padding: 15px;
+  padding: 15px 80px;
   font-family: "Chakra Petch", sans-serif;
+}
+
+.Introducao img {
+  max-width: 400px;
+  max-height: 350px;
+  margin: auto;
 }
 
 .texto-verde {
@@ -203,12 +209,6 @@ h2 {
   /* change the direction of the change here */
   color: black;
   text-decoration: none;
-}
-
-img {
-  max-width: 400px;
-  max-height: 350px;
-  margin: auto;
 }
 
 .agenda2030 {
@@ -454,6 +454,12 @@ hr {
 .imagens-conclusao {
   font-size: 18px;
   padding: 50px;
+}
+
+.imagens-conclusao img {
+  max-width: 400px;
+  max-height: 350px;
+  margin: auto;
 }
 
 .content {
