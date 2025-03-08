@@ -532,7 +532,7 @@ figcaption {
 }
 
 .acessar-jogo {
-  background-image: url(Fundo\ fotos/Jogo.jpg);
+  background-image: url(fotos/Fundo\ Jogo.jpg);
   background-size: cover;
   /* Ajusta a imagem para cobrir toda a div */
   background-position: center;
